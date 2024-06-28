@@ -21,4 +21,8 @@ app.get("/livros", (req, res) => {
     res.status(200).json(livros);
 });
 
+app.post("/livros", (req, res) => {
+    res.status(201).send("Livro cadastrado com sucesso!");
+});
+
 export default app;
